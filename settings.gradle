@@ -1,0 +1,2 @@
+rootProject.name='Empodera'
+include ':app'

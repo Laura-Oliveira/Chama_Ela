@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/txt_description_image"
+            android:src="@mipmap/ic_icon_round"
+            >
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="75dp"
+            android:text="@string/btn_register_user"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register_user_type"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+                <!-- =============== USER BUTTON =============== -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_register_user_type_user"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:backgroundTint="@color/btn_color"
+                    android:text="@string/radio_btn_user"
+                    android:textColor="@color/txt_color"
+                    android:layout_centerInParent="true"
+                    android:onClick="openRegisterUser"
+                    />
+
+            <!-- =============== WORKER BUTTON =============== -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_register_user_type_worker"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:backgroundTint="@color/btn_color"
+                android:text="@string/radio_btn_worker"
+                android:textColor="@color/txt_color"
+                android:layout_centerInParent="true"
+                android:onClick="openRegisterUserPage"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

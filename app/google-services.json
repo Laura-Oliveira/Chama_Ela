@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "920737313471",
+    "firebase_url": "https://empodera-239311.firebaseio.com",
+    "project_id": "empodera-239311",
+    "storage_bucket": "empodera-239311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920737313471:android:0d0da5b25ee90997160c0a",
+        "android_client_info": {
+          "package_name": "com.empodera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920737313471-jdh8kgd0pfdidoqqrlcqe24rpteal852.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAQY2u1FAJl3-BZ9b5VkaTrUjCB-WERj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920737313471-jdh8kgd0pfdidoqqrlcqe24rpteal852.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

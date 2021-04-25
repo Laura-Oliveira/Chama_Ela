@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Empodera</string>
+
+    <!-- Strings activity_login -->
+    <string name="txt_description_image"> Icon that represents the brand app</string>
+    <string name="hint_username"> E-mail </string>
+    <string name="hint_password"> Senha </string>
+    <string name="btn_login"> Entrar </string>
+    <string name="btn_register_user">Cadastrar </string>
+
+    <!-- Strings activity_register_user -->
+    <string name="register_user_type">Qual tipo de perfil você deseja criar?</string>
+
+    <!-- Strings activity_register_user -->
+    <string name="register_username_title"> Cadastrar Usuária </string>
+    <string name="radio_btn_user">Usuário(a)</string>
+    <string name="radio_btn_worker">Trabalhadora</string>
+    <string name="register_username"> Nome</string>
+    <string name="register_surname"> Sobrenome </string>
+    <string name="register_email"> E-mail </string>
+    <string name="register_phone"> Telefone </string>
+    <string name="register_password"> Senha </string>
+
+
+    <!-- Strings activity_register_service -->
+    <string name="register_service_title"> Cadastrar Serviço</string>
+    <string name="register_service_name"> Serviço </string>
+    <string name="register_service_price">Preço do Serviço  </string>
+    <string name="register_service_price_ticket"> Preço da Passagem</string>
+    <string name="register_service_type_service"> Tipo de Serviço </string>
+    <string name="register_service_mobility"> Pode ir na casa da pessoa fazer o serviço?</string>
+    <string name="register_service_radio_yes"> Sim</string>
+    <string name="register_service_radio_no">Não</string>
+
+    <!-- Checkbox  activity_register_service -->
+    <string name="check_cabeleleira">Cabelereira</string>
+    <string name="check_manicure">Manicure</string>
+    <string name="check_pinta_cabelo"> Pinta cabelo</string>
+    <string name="check_cozinheira">Cozinheira</string>
+    <string name="check_boleira">Boleira - doces e salgados</string>
+    <string name="check_faz_pizza"> Faz pizza</string>
+    <string name="check_almoco"> Faz almoço</string>
+
+    <!-- Buttons activity_register_service-->
+    <string name="btn_register_service">Cadastrar</string>
+
+
+    <!-- Strings activity_learn_subject -->
+    <string name="txt_title_learn_subject"> Bora Aprender?</string>
+    <string name="link_marmitex">
+        <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-marmitex/">Como vender Marmitex?</a>
+    </string>
+    <string name="link_summer">
+        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-ganhar-dinheiro-no-verao/">O que vender no verão?</a>
+    </string>
+
+    <string name="link_brigadeiro">
+        <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-brigadeiros/">Vender Brigadeiro</a>
+    </string>
+
+    <string name="link_easter">
+        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-ganhar-dinheiro-na-pascoa/"> Como ganhar dinheiro na Páscoa?</a>
+    </string>
+
+    <string name="link_revenda_produtos">
+        <a href="https://www.mulheresempreendedoras.net.br/produtos-para-revenda-por-catalogo/">Como revender produtos?</a>
+    </string>
+
+    <string name="link_ideias_trabalho">
+        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-trabalhar-em-casa/">Mais ideias para ganhar dinnheiro em casa</a>
+    </string>
+
+    <!-- ======================== API KEY GOOGLE MAPS ========================== -->
+
+    <string name="google_maps_key"> AIzaSyD3SPePLo7ulwZAriB4dvY99CAnB4zevKY </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search_woker">Map</string>
+
+
+</resources>
