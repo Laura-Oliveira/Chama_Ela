@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,20 +9,17 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <!-- ====== REGISTER USERNAME IMAGE + TITLE TOP PAGE ======-->
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:contentDescription="@string/txt_description_image"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="13dp"
-            android:src="@mipmap/ic_icon_round"
-            >
-        </androidx.appcompat.widget.AppCompatImageView>
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/txt_description_image"
+            android:src="@mipmap/ic_icon_round"></androidx.appcompat.widget.AppCompatImageView>
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
@@ -32,41 +28,7 @@
             android:layout_marginBottom="20dp"
             android:text="@string/register_username_title"
             android:textAllCaps="true"
-            android:textSize="16sp"
-            >
-        </com.google.android.material.textview.MaterialTextView>
-
-        <!-- ========= REGISTER USER RADIO BUTTON TYPE USER ========= -->
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/radio_btn_register_user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/radio_btn_user"
-                    android:textSize="10pt"
-                    android:layout_marginLeft="35sp"
-                    android:layout_marginRight="15sp"
-                    />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/radio_btn_register_worker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/radio_btn_worker"
-                    android:textSize="10pt"
-                    android:layout_marginRight="20sp"
-                    />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-        </RadioGroup>
+            android:textSize="16sp"></com.google.android.material.textview.MaterialTextView>
 
         <!-- ========= REGISTER USER USERNAME ========= -->
         <com.google.android.material.textfield.TextInputLayout
@@ -75,38 +37,15 @@
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:hint="@string/register_username"
-            app:endIconMode="clear_text"
-            >
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_username_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textNoSuggestions"
-                android:maxLines="1"
                 android:maxLength="15"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- ========= REGISTER USER SURNAME ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_surname"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:hint="@string/register_surname"
-            app:endIconMode="clear_text"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_surname_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="textNoSuggestions"
-                android:maxLines="1"
-                android:maxLength="15"
-                />
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -117,16 +56,14 @@
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:hint="@string/register_email"
-            app:endIconMode="clear_text"
-            >
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_email_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress|textNoSuggestions"
-                android:maxLines="1"
-                />
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -136,17 +73,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/register_phone"
-            app:endIconMode="clear_text"
-            >
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_phone_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="phone|textNoSuggestions"
-                android:maxLines="1"
                 android:maxLength="11"
-                />
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -156,40 +91,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/register_password"
-            app:endIconMode="password_toggle"
-            >
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textPassword|textNoSuggestions"
-                android:maxLines="1"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                />
+                android:inputType="textPassword|textNoSuggestions"
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ========= REGISTER USER BUTTON ========= -->
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_register_user"
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:backgroundTint="@color/btn_color"
-                android:text="@string/btn_register_user"
-                android:textColor="@color/colorPrimary"
-                android:layout_alignParentBottom="true"
-                android:onClick="registerUser"
-                />
-
-        </RelativeLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register_user"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/btn_color"
+            android:onClick="registerUser"
+            android:text="@string/btn_register_user"
+            android:textColor="@color/colorPrimary" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/_Empodera_.iml" filepath="$PROJECT_DIR$/.idea/modules/_Empodera_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Empodera.iml" filepath="$PROJECT_DIR$/.idea/modules/Empodera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Empodera.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Empodera.app.iml" />
     </modules>
   </component>
 </project>

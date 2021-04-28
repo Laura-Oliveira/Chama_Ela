@@ -12,7 +12,7 @@
     <string name="register_user_type">Qual tipo de perfil você deseja criar?</string>
 
     <!-- Strings activity_register_user -->
-    <string name="register_username_title"> Cadastrar Usuária </string>
+    <string name="register_username_title"> Cadastrar Usuário(a) </string>
     <string name="radio_btn_user">Usuário(a)</string>
     <string name="radio_btn_worker">Trabalhadora</string>
     <string name="register_username"> Nome</string>
