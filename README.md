@@ -28,4 +28,10 @@ A plataforma também abre possibilidade para mulheres disponibilizarem mentorias
 
 Dentro da área de ensino possuirá um mecanismo sutil para que essa mulher consiga entrar em contato com assistentes sociais, de modo que possam ter uma ajuda especializada dentro da lei.
 
+Ajudar mulheres em situação de relacionamento abusivo a sairem desse contexto tóxico e reconstruírem a vida longe de seus abusadores.
+
+Possibilitar essas mulheres a terem uma vida de verdade, e perceberem que existe muita coisa boa fora desse relacionamento abusivo para ser visto e aproveitado.
+
+Existe vida fora de um relacionamento abusivo.
+
 Aplicativo Android voltado para auxiliar mulheres de periferia e/ou baixa renda a obter uma renda extra, através da divulgação dos seus serviços para sua vizinhança através da plataforma. E caso não possua nenhuma habilidade que possa cadastrar na plataforma, esta disponibilizará conteúdo gratuito para que essas mulheres desenvolvam alguma habilidade e possam posteriormente disponibilizar na plataforma seus serviços -->
