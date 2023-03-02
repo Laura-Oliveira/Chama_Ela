@@ -2,6 +2,8 @@
 
 Empodera é um **aplicativo Android** voltado para **auxiliar mulheres de periferia e/ou baixa renda em situação de relacionamento abusivo a obter fonte de renda**, através da **divulgação dos seus serviços** para sua vizinhança através da plataforma de **forma gratuita**.
 
+Para que essa mulher consiga levantar dinheiro suficiente para sair desse ambiente/relacionamento tóxico.
+
 E caso essa mulher não possua nenhuma habilidade que possa cadastrar na plataforma, ela poderá buscar conteúdo gratuito dentro da plataforma para desenvolver alguma habilidade, e posteriormente postar esse serviço na plataforma.
 
 ## Objetivo 
