@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.empodera">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -22,21 +21,22 @@
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_icon_round_background" />
 
-        <activity android:name=".View.SplashScreenActivity">
+        <activity
+            android:name="com.empodera.View.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Controller.LoginActivity" />
-        <activity android:name=".Controller.RegisterUserActivity" />
+        <activity android:name="com.empodera.Controller.LoginActivity" />
+        <activity android:name="com.empodera.Controller.RegisterUserActivity" />
         <activity
-            android:name=".View.SearchWorkerActivity"
+            android:name="com.empodera.View.SearchWorkerActivity"
             android:label="@string/title_activity_search_woker" />
-        <activity android:name=".View.LearnSubjectActivity" />
-        <activity android:name=".Controller.RegisterServiceActivity" />
-        <activity android:name=".Controller.RegisterUserTypeActivity"/>
+        <activity android:name="com.empodera.View.LearnSubjectActivity" />
+        <activity android:name="com.empodera.Controller.RegisterServiceActivity" />
+        <activity android:name="com.empodera.Controller.RegisterUserTypeActivity"/>
     </application>
 
 </manifest>

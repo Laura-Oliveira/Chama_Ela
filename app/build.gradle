@@ -2,13 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.empodera"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 19
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -21,6 +20,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.empodera'
 
 }
 
@@ -43,8 +43,11 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:17.0.0'
 
     /* Dependencies Firebase Database */
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    implementation 'com.google.firebase:firebase-database:19.2.1'
+//    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+//    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-analytics'
 
     /* Dependencies Material Design */
     api 'com.google.android.material:material:1.1.0-alpha06'

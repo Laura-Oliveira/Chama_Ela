@@ -6,6 +6,7 @@
     <string name="hint_username"> E-mail </string>
     <string name="hint_password"> Senha </string>
     <string name="btn_login"> Entrar </string>
+    <string name="btn_register">Cadastra-se </string>
     <string name="btn_register_user">Cadastrar </string>
 
     <!-- Strings activity_register_user -->

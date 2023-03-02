@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment:1.2.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a8d035b10d35696f2f9978e48b11bb/fragment-1.2.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a325c9e0553a4fba6f0c05c9c2f055b4/transformed/fragment-1.2.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a8d035b10d35696f2f9978e48b11bb/fragment-1.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a8d035b10d35696f2f9978e48b11bb/fragment-1.2.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a8d035b10d35696f2f9978e48b11bb/fragment-1.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a325c9e0553a4fba6f0c05c9c2f055b4/transformed/fragment-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a325c9e0553a4fba6f0c05c9c2f055b4/transformed/fragment-1.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a325c9e0553a4fba6f0c05c9c2f055b4/transformed/fragment-1.2.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

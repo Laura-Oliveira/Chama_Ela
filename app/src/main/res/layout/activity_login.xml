@@ -97,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="70sp"
             android:backgroundTint="@color/btn_color"
-            android:text="@string/btn_register_user"
+            android:text="@string/btn_register"
             android:textColor="@color/colorPrimary"
             android:onClick="openRegisterUserPage"
             >

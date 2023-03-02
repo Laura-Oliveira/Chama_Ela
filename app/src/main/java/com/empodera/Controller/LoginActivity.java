@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity
 
     public void openRegisterUserPage(View view)
     {
-        Intent activity = new Intent(LoginActivity.this, RegisterUserTypeActivity.class);
+        Intent activity = new Intent(LoginActivity.this, RegisterUserActivity.class);
         startActivity(activity);
     }
 }
