@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RegisterServiceActivity extends AppCompatActivity
 {
     View view;
-    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
     private EditText service_name, price_service, price_ticket;
     private CheckBox checkbox_cake, checkbox_hair_style, checkbox_chef;
@@ -60,7 +60,7 @@ public class RegisterServiceActivity extends AppCompatActivity
         ServiceApp serviceApp = new ServiceApp();
 
         /* TAkes the database reference */
-        DatabaseReference dbReferenceInstance = database.getReference();
+        DatabaseReference dbReferenceInstance = database.getRef();
 
         /* Create a child Service in each instance created */
         DatabaseReference dbReference = dbReferenceInstance.child("service");
@@ -87,7 +87,7 @@ public class RegisterServiceActivity extends AppCompatActivity
 
      //   if(serviceOptions!= "" || serviceOptions!= " ")
     //    {
-            dbReference = database.getReference("service");
+            dbReference = database.getDatabase().getReference("service");
 
             /* Setting data into ServiceApp class */
             serviceApp.setServiceName(txt_service_name);

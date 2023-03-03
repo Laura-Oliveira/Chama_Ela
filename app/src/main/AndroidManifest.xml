@@ -23,21 +23,22 @@
 
         <activity
             android:name="com.empodera.View.SplashScreenActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true"></activity>
         <activity android:name="com.empodera.Controller.LoginActivity" />
         <activity android:name="com.empodera.Controller.RegisterUserActivity" />
         <activity
             android:name="com.empodera.View.SearchWorkerActivity"
             android:label="@string/title_activity_search_woker" />
         <activity android:name="com.empodera.View.LearnSubjectActivity" />
-        <activity android:name="com.empodera.Controller.RegisterServiceActivity" />
-        <activity android:name="com.empodera.Controller.RegisterUserTypeActivity"/>
+        <activity
+            android:name="com.empodera.Controller.RegisterServiceActivity"
+            android:exported="true">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.empodera.Controller.RegisterUserTypeActivity" />
     </application>
 
 </manifest>
