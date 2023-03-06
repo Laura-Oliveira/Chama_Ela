@@ -7,10 +7,10 @@
     >
 
     <ImageView
-        android:id="@+id/img_splash_screen"
+        android:id="@mipmap/ic_splash_screen_foreground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/img_start"
+        android:src="@mipmap/ic_splash_screen_foreground"
         />
 
 </RelativeLayout>

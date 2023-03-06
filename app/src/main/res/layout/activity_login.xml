@@ -23,7 +23,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="48dp"
             android:layout_marginBottom="8dp"
-            android:src="@mipmap/ic_icon_round"
+            android:src="@mipmap/ic_logo_round"
             >
         </ImageView>
         
@@ -86,7 +86,7 @@
             android:layout_height="70sp"
             android:backgroundTint="@color/btn_color"
             android:text="@string/btn_login"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/txt_color"
             >
         </com.google.android.material.button.MaterialButton>
 
@@ -98,7 +98,7 @@
             android:layout_height="70sp"
             android:backgroundTint="@color/btn_color"
             android:text="@string/btn_register"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/txt_color"
             android:onClick="openRegisterUserPage"
             >
         </com.google.android.material.button.MaterialButton>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <!-- =============== SERVICE INFO =============== -->
+
+          <!--  <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profile_image_shop"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_marginBottom="10pt" />-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10pt"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10pt"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_price_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/profile_price_service"
+            android:textAllCaps="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:padding="10sp"
+            />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_service_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:layout_marginLeft="30sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="9pt" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_price_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/profile_price_ticket"
+                android:textAllCaps="true"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:padding="10sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_price_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="9pt" />
+
+</androidx.core.widget.NestedScrollView>

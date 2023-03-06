@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Empodera</string>
+    <string name="app_name">Chama Ela!</string>
 
     <!-- Strings activity_login -->
     <string name="txt_description_image"> Icon that represents the brand app</string>
@@ -76,6 +76,8 @@
     <string name="google_maps_key"> AIzaSyD3SPePLo7ulwZAriB4dvY99CAnB4zevKY </string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_search_woker">Map</string>
+    <string name="profile_price_ticket">Preco Passsagem</string>
+    <string name="profile_price_service">Preco Servico</string>
 
 
 </resources>

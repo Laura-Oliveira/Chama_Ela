@@ -19,7 +19,7 @@
             android:layout_marginTop="48dp"
             android:layout_marginBottom="8dp"
             android:contentDescription="@string/txt_description_image"
-            android:src="@mipmap/ic_icon_round"></androidx.appcompat.widget.AppCompatImageView>
+            android:src="@mipmap/ic_logo_round"></androidx.appcompat.widget.AppCompatImageView>
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"

@@ -8,11 +8,18 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_icon_round"
+        android:icon="@mipmap/ic_logo_round"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_icon_round"
+        android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -22,23 +29,27 @@
             android:resource="@drawable/ic_icon_round_background" />
 
         <activity
-            android:name="com.empodera.View.SplashScreenActivity"
-            android:exported="true"></activity>
-        <activity android:name="com.empodera.Controller.LoginActivity" />
-        <activity android:name="com.empodera.Controller.RegisterUserActivity" />
-        <activity
-            android:name="com.empodera.View.SearchWorkerActivity"
-            android:label="@string/title_activity_search_woker" />
-        <activity android:name="com.empodera.View.LearnSubjectActivity" />
-        <activity
-            android:name="com.empodera.Controller.RegisterServiceActivity"
-            android:exported="true">>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".View.SplashScreenActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name="com.empodera.Controller.RegisterUserTypeActivity" />
+        <activity android:name=".Controller.LoginActivity" />
+        <activity android:name=".Controller.RegisterUserActivity" />
+        <activity
+            android:name=".View.SearchWorkerActivity"
+            android:label="@string/title_activity_search_woker" />
+        <activity android:name=".View.LearnSubjectActivity" />
+        <activity
+            android:name=".Controller.RegisterServiceActivity"
+            android:exported="true">
+            >
+
+        </activity>
+        <activity android:name=".Controller.RegisterUserTypeActivity" />
     </application>
 
 </manifest>

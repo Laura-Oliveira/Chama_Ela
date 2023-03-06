@@ -93,7 +93,7 @@ public class RegisterServiceActivity extends AppCompatActivity
             serviceApp.setServiceName(txt_service_name);
             serviceApp.setPriceService(float_price_service);
             serviceApp.setPriceTicket(float_price_ticket);
-            serviceApp.setTypeService(serviceOptions);
+            //serviceApp.setTypeService(serviceOptions);
             //  serviceApp.setTypeService(type_service);
 
             /* Transfering data into Firebase object reference */

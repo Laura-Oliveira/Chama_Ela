@@ -6,8 +6,8 @@ public class ServiceApp
 {
     private String id;
     private String serviceName;
-    private String typeService;
     private float priceService, priceTicket;
+    //private String typeService;
 
     public ServiceApp()
     {
@@ -15,7 +15,7 @@ public class ServiceApp
         this.serviceName = serviceName;
         this.priceService = priceService;
         this.priceTicket = priceTicket;
-        this.typeService = typeService;
+        //this.typeService = typeService;
 
     }
 
@@ -59,7 +59,7 @@ public class ServiceApp
         this.priceTicket = priceTicket;
     }
 
-    public String getTypeService()
+   /* public String getTypeService()
     {
         return typeService;
     }
@@ -68,5 +68,5 @@ public class ServiceApp
     {
         this.typeService = typeService;
     }
-
+*/
 }

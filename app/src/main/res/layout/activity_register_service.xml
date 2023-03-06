@@ -21,7 +21,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="13dp"
             android:contentDescription="@string/txt_description_image"
-            android:src="@mipmap/ic_icon_round"></ImageView>
+            android:src="@mipmap/ic_logo_round"></ImageView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -312,7 +312,7 @@
                 android:backgroundTint="@color/btn_color"
                 android:onClick="registerService"
                 android:text="@string/btn_register_service"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/txt_color"
                 />
 
         </RelativeLayout>
