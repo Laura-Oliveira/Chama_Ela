@@ -1,6 +1,6 @@
-# _Empodera_
+# Chama Ela!
 
-Empodera é um **aplicativo Android** voltado para **auxiliar mulheres de periferia e/ou baixa renda em situação de relacionamento abusivo a obter fonte de renda**, através da **divulgação dos seus serviços** para sua vizinhança através da plataforma de **forma gratuita**.
+Chama Ela! é um **aplicativo Android** voltado para **auxiliar mulheres de periferia e/ou baixa renda em situação de relacionamento abusivo a obter fonte de renda**, através da **divulgação dos seus serviços** para sua vizinhança através da plataforma de **forma gratuita**.
 
 Para que essa mulher consiga levantar dinheiro suficiente para sair desse ambiente/relacionamento tóxico.
 
