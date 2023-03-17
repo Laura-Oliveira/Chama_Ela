@@ -1,4 +1,4 @@
-# Chama Ela!
+# Chama Ela! (pt-br)
 
 Chama Ela! é um **aplicativo Android** voltado para **auxiliar mulheres de periferia e/ou baixa renda em situação de relacionamento abusivo a obter fonte de renda**, através da **divulgação dos seus serviços** para sua vizinhança através da plataforma de **forma gratuita**.
 
@@ -6,13 +6,19 @@ Para que essa mulher consiga levantar dinheiro suficiente para sair desse ambien
 
 E caso essa mulher não possua nenhuma habilidade que possa cadastrar na plataforma, ela poderá consumir conteúdo gratuito dentro da plataforma para desenvolver alguma habilidade, e posteriormente postar esse serviço na plataforma.
 
+E a plataforma **cria um ambiente seguro** onde **mulheres contratam serviços** de outras **mulheres**.
+
 ## Objetivo 
 
 Ajudar **mulheres em situação de relacionamento abusivo** que **não possuem fonte de renda**.
 
 E por conta da falta de fonte de renda acabam não saindo desses relacionamentos. Pois na maioria dos casos possuem filhos e nenhuma rede de apoio. 
 
-Então mesmo que identifiquem que estão em um relacionamento abusivo, dificilmente sairão desse relacionamento. Seja porquê não conseguem se sustentar financeiramente, seja por não querer colocar seus filhos em uma possível situação de rua. Pois essas mulheres em sua grande maioria não possuem rede de apoio.
+Então mesmo que identifiquem que estão em um relacionamento abusivo, dificilmente sairão desse relacionamento. 
+
+Seja porquê não conseguem se sustentar financeiramente, seja por não querer colocar seus filhos em uma possível situação de rua. 
+
+Pois essas mulheres em sua grande maioria não possuem rede de apoio.
 
 ### Tecnologias & Tools
 
@@ -21,6 +27,38 @@ Então mesmo que identifiquem que estão em um relacionamento abusivo, dificilme
 * Arquitetura MVC;
 * Firebase;
 * Gradle;
+* Trello.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+# Chama Ela! (en)
+
+Chama Ela! is an **Android app** that has the main goal to **helping women from the periphery and/or low-income that are facing an abusive relationship to obtain a source of income**, by offering a digital plataform where they can post **their services** to their neighborhood **free of charge**.
+
+So that this woman can raise enough money to get out of this toxic environment/relationship.
+
+If this woman does not have any skill that she can register on the platform, she will be able to consume free content within the platform to develop some skill, and later post this service on the platform.
+
+The platform **creates a safe** environment where **women hire services** from other **women**.
+
+## Goal
+
+Helping **women in abusive relationships** who **have no source of income**.
+
+And because of the lack of a source of income, they end up not leaving these relationships. Because in most cases they have children and no support network.
+
+So even if they identify that they are in an abusive relationship, they will hardly leave that relationship. 
+
+Either because they cannot support themselves financially, or because they don't want to put their children in a possible street situation. 
+
+Because in most cases theses women doesn't have a support network.
+
+### Technologies & Tools
+
+* Java Android;
+* Material Design;
+* MVC architecture;
+* Firebase;
+* gradle;
 * Trello.
 
 
