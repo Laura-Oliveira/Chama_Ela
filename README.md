@@ -29,7 +29,7 @@ Pois essas mulheres em sua grande maioria não possuem rede de apoio.
 * Gradle;
 * Trello.
 
-**Pitch:** https://www.linkedin.com/feed/update/urn:li:activity:7042168097633353728/
+#### **Pitch:** https://www.linkedin.com/feed/update/urn:li:activity:7042168097633353728/
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 # Chama Ela! (en)
