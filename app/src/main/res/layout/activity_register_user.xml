@@ -107,14 +107,10 @@
         <!-- ========= REGISTER USER BUTTON ========= -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_register_user"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
+            style="@style/Button"
             android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/btn_color"
             android:onClick="registerUser"
-            android:text="@string/btn_register_user"
-            android:textColor="@color/colorPrimary" />
+            android:text="@string/btn_register_user"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

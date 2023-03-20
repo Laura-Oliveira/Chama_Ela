@@ -7,5 +7,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/btn_color</item>
+        <item name="textAllCaps"> true </item>
+        <item name="textAppearanceButton">@color/txt_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+
+    </style>
 
 </resources>
