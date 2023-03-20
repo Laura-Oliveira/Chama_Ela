@@ -114,7 +114,7 @@
             android:backgroundTint="@color/btn_color"
             android:onClick="registerUser"
             android:text="@string/btn_register_user"
-            android:textColor="@color/txt_color" />
+            android:textColor="@color/colorPrimary" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

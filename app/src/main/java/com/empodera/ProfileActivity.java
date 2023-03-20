@@ -42,10 +42,10 @@ public class ProfileActivity extends AppCompatActivity {
     TextView priceTicketText = (TextView) findViewById(R.id.profile_price_ticket);
 
     String serviceName = intent.getStringExtra("serviceName");
-    String priceService = String.valueOf((intent.putExtra("priceService", priceServiceText.getText().toString())));
-    String priceTicket = String.valueOf(intent.putExtra("priceTicket", priceTicketText.getText().toString()));
+//    String priceService = String.valueOf((intent.putExtra("priceService", priceServiceText.getText().toString())));
+//    String priceTicket = String.valueOf(intent.putExtra("priceTicket", priceTicketText.getText().toString()));
 
-//    serviceNameText.setText(serviceName);
+    //serviceNameText.setText(serviceName);
 
 //    FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
 //    databaseReference = (DatabaseReference) database.getInstance().getReference("service").addValueEventListener(new ValueEventListener() {
