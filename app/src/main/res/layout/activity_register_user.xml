@@ -1,117 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Controller.RegisterUserActivity">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <!-- ====== REGISTER USERNAME IMAGE + TITLE TOP PAGE ======-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_logo"
+        style="@style/Logo"
+        android:contentDescription="@string/txt_description_image"
+        android:src="@mipmap/ic_logo_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- ====== REGISTER USERNAME IMAGE + TITLE TOP PAGE ======-->
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="8dp"
-            android:contentDescription="@string/txt_description_image"
-            android:src="@mipmap/ic_logo_round"></androidx.appcompat.widget.AppCompatImageView>
+    <!-- ========= REGISTER USER USERNAME ========= -->
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:text="@string/register_username_title"
-            android:textAllCaps="true"
-            android:textSize="16sp"></com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register_username_title"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_logo"
+        app:layout_constraintVertical_bias="0.144" />
 
-        <!-- ========= REGISTER USER USERNAME ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_username"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_username"
+        style="@style/TextBox"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/register_username"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/regiter_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_username_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:hint="@string/register_username"
-            app:endIconMode="clear_text">
+            android:inputType="textNoSuggestions"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:textColorHint="#546E7A" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_username_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="textNoSuggestions"
-                android:maxLength="15"
-                android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+    <!-- ========= REGISTER USER EMAIL ========= -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regiter_email"
+        style="@style/TextBox"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/register_email"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/register_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <!-- ========= REGISTER USER EMAIL ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/regiter_email"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_email_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:hint="@string/register_email"
-            app:endIconMode="clear_text">
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_email_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="textEmailAddress|textNoSuggestions"
-                android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+    <!-- ========= REGISTER USER PHONE ========= -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_phone"
+        style="@style/TextBox"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/register_phone"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/register_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <!-- ========= REGISTER USER PHONE ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_phone"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_phone_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/register_phone"
-            app:endIconMode="clear_text">
+            android:inputType="phone|textNoSuggestions"
+            android:maxLength="11"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_phone_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="phone|textNoSuggestions"
-                android:maxLength="11"
-                android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+    <!-- ========= REGISTER USER PASSWORD ========= -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_password"
+        style="@style/TextBox"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/register_password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <!-- ========= REGISTER USER PASSWORD ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_password"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/register_password"
-            app:endIconMode="password_toggle">
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:inputType="textPassword|textNoSuggestions"
+            android:maxLines="1"
+            android:textColorHint="#000000" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_password_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textPassword|textNoSuggestions"
-                android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+    <!-- ========= REGISTER USER BUTTON ========= -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register_user"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:onClick="registerUser"
+        android:text="@string/btn_register_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- ========= REGISTER USER BUTTON ========= -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_register_user"
-            style="@style/Button"
-            android:layout_alignParentBottom="true"
-            android:onClick="registerUser"
-            android:text="@string/btn_register_user"/>
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
