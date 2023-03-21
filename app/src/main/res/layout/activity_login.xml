@@ -17,17 +17,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/txt_title"
+        style="@style/TextViewTitle"
         android:layout_marginBottom="110dp"
         android:text="@string/app_name"
-        android:textAllCaps="true"
-        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/input_login_username"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_login_username"
@@ -87,11 +83,11 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_register_user"
         style="@style/Button"
-        android:text="@string/btn_register"
         android:layout_marginBottom="150dp"
+        android:onClick="openRegisterUserPage"
+        android:text="@string/btn_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="openRegisterUserPage"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

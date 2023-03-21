@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/screen_register_service"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Controller.RegisterServiceActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <!-- ====== REGISTER SERVICE IMAGE + TITLE TOP PAGE ======-->
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="13dp"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_logo"
+            style="@style/Logo"
             android:contentDescription="@string/txt_description_image"
-            android:src="@mipmap/ic_logo_round"></ImageView>
+            android:src="@mipmap/ic_logo_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:text="@string/register_service_title"
-            android:textAllCaps="true"
-            android:textSize="16sp"></TextView>
+    <!-- ========= REGISTER SERVICE NAME ========= -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title"
+        style="@style/TextViewTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/register_service_title"
+        app:layout_constraintBottom_toTopOf="@+id/register_service_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
-        <!-- ========= REGISTER SERVICE NAME ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_service_name"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_service_name"
+        style="@style/TextBox"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/register_service_name"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/register_sevice_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_service_name_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:hint="@string/register_service_name"
-            app:endIconMode="clear_text">
+            android:inputType="textNoSuggestions"
+            android:maxLength="15"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_service_name_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="textNoSuggestions"
-                android:maxLength="15"
-                android:maxLines="1" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Register Type of Service (Title)
         <TextView
@@ -232,90 +234,112 @@
         </LinearLayout>
 -->
         <!-- ========= REGISTER SERVICE PRICE ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_sevice_price"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_sevice_price"
+        style="@style/TextBox"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/register_service_price"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_service_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_service_price_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/register_service_price"
-            app:endIconMode="clear_text">
+            android:inputType="numberDecimal|textNoSuggestions"
+            android:maxLength="11"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_service_price_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="numberDecimal|textNoSuggestions"
-                android:maxLength="11"
-                android:maxLines="1" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ========= REGISTER USER RADIO BUTTON TYPE USER ========= -->
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/register_service_mobility"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_sevice_price" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/register_service_price_ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_btn_register_service_yes"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/register_service_mobility"
-            android:textAlignment="center"
-            android:textSize="22sp"/>
+            android:layout_marginRight="80dp"
+            android:minHeight="48dp"
+            android:text="@string/register_service_radio_yes"
+            android:textSize="10pt" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_btn_register_service_no"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:minHeight="48dp"
+            android:text="@string/register_service_radio_no"
+            android:textSize="10pt" />
 
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:id="@+id/radio_btn_register_service_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/register_service_radio_yes"
-                android:textSize="10pt" />
-
-            <com.google.android.material.radiobutton.MaterialRadioButton
-                android:id="@+id/radio_btn_register_service_no"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/register_service_radio_no"
-                android:textSize="10pt" />
-
-        </RadioGroup>
+    </RadioGroup>
 
         <!-- ========= REGISTER SERVICE PRICE ========= -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_service_price_ticket"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_service_price_ticket"
+        style="@style/TextBox"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/register_service_price_ticket"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_service_price_ticket_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/register_service_price_ticket"
-            app:endIconMode="clear_text"
-            android:layout_marginBottom="20sp">
+            android:inputType="numberDecimal|textNoSuggestions"
+            android:maxLength="11"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_service_price_ticket_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="numberDecimal|textNoSuggestions"
-                android:maxLength="11"
-                android:maxLines="1" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ========= REGISTER USER BUTTON ========= -->
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_register_service"
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:backgroundTint="@color/btn_color"
-                android:onClick="registerService"
-                android:text="@string/btn_register_service"
-                android:textColor="@color/txt_color"
-                />
 
-        </RelativeLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register_service"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/btn_color"
+        android:onClick="registerService"
+        android:text="@string/btn_register_service"
+        android:textColor="@color/txt_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_service_price_ticket" />
 
-    </LinearLayout>
-</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
