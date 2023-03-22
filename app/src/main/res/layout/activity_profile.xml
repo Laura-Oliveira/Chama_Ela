@@ -1,102 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- =============== SERVICE INFO =============== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileActivity">
 
-          <!--  <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/profile_image_shop"
-                android:layout_width="match_parent"
-                android:layout_height="182dp"
-                android:layout_marginBottom="10pt" />-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        style="@style/Logo"
+        android:contentDescription="@string/txt_description_image"
+        android:src="@mipmap/ic_logo_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/profile_user_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10pt"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textAllCaps="true"
-            android:textColor="@color/colorAccent"
-            android:textSize="10pt"
-            android:textStyle="bold" />
+    <!-- ========= REGISTER SERVICE NAME ========= -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title"
+        style="@style/TextViewTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/profile_title"
+        app:layout_constraintBottom_toTopOf="@+id/register_service_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/profile_service_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10pt"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textAllCaps="true"
-                android:textColor="@color/colorAccent"
-                android:textSize="10pt"
-                android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_label_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10sp"
+        android:singleLine="true"
+        android:text="@string/profile_label_data"
+        android:textAllCaps="true"
+        android:textColor="#EFEBE9"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_user_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_label_data" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_user_phone"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_user_email"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_phone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_label_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10sp"
+        android:singleLine="true"
+        android:text="@string/profile_label_service"
+        android:textAllCaps="true"
+        android:textColor="#EFEBE9"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_service_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_label_service" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_service_price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_service_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_price_ticket"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_service_price" />
 
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_type_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10sp"
+        android:singleLine="true"
+        android:text="@string/profile_label_type_contact"
+        android:textAllCaps="true"
+        android:textColor="#EFEBE9"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_price_ticket" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/label_price_service"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="@string/profile_price_service"
-            android:textAllCaps="true"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@color/white"
-            android:textSize="10pt"
-            android:textStyle="bold"
-            android:padding="10sp"
-            />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profile_service_type_contact"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_type_contact" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/profile_service_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20sp"
-                android:layout_marginLeft="30sp"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/colorPrimary"
-                android:textSize="9pt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/label_price_ticket"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="@string/profile_price_ticket"
-                android:textAllCaps="true"
-                android:background="@color/colorPrimaryDark"
-                android:textColor="@color/white"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:padding="10sp"
-                />
+</ScrollView>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/profile_price_ticket"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20sp"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/colorPrimary"
-                android:textSize="9pt" />
-
-</androidx.core.widget.NestedScrollView>

@@ -23,13 +23,13 @@ import com.google.firebase.storage.StorageReference;
 import com.google.gson.Gson;
 
 public class ProfileActivity extends AppCompatActivity {
-    private FirebaseAuthException auth;
+ /*   private FirebaseAuthException auth;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference = (DatabaseReference) database.getInstance().getReference();
     ServiceApp serviceApp = new ServiceApp();
     private ValueEventListener valueEventListener;
 
-    Intent intent = getIntent();
+    Intent intent = getIntent();*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +37,11 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
     }
 
-    TextView serviceNameText = (TextView) findViewById(R.id.profile_service_name);
+/*    TextView serviceNameText = (TextView) findViewById(R.id.profile_service_name);
     TextView priceServiceText = (TextView) findViewById(R.id.profile_service_price);
     TextView priceTicketText = (TextView) findViewById(R.id.profile_price_ticket);
 
-    String serviceName = intent.getStringExtra("serviceName");
+    String serviceName = intent.getStringExtra("serviceName");*/
 //    String priceService = String.valueOf((intent.putExtra("priceService", priceServiceText.getText().toString())));
 //    String priceTicket = String.valueOf(intent.putExtra("priceTicket", priceTicketText.getText().toString()));
 

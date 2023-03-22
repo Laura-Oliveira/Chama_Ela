@@ -46,6 +46,12 @@
     <!-- Buttons activity_register_service-->
     <string name="btn_register_service">Cadastrar</string>
 
+    <!-- Strings activity_profile -->
+    <string name="profile_title"> Perfil </string>
+    <string name="profile_label_data"> Dados </string>
+    <string name="profile_label_service"> Servicos</string>
+    <string name="profile_label_type_contact"> Tipo de Contato</string>
+
 
     <!-- Strings activity_learn_subject -->
     <string name="txt_title_learn_subject"> Bora Aprender?</string>
