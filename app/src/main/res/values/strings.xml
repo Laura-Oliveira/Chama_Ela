@@ -22,16 +22,17 @@
     <string name="register_phone"> Telefone </string>
     <string name="register_password"> Senha </string>
 
-
     <!-- Strings activity_register_service -->
     <string name="register_service_title"> Cadastrar Serviço</string>
-    <string name="register_service_name"> Serviço </string>
-    <string name="register_service_price">Preço do Serviço  </string>
-    <string name="register_service_price_ticket"> Preço da Passagem</string>
-    <string name="register_service_type_service"> Tipo de Serviço </string>
-    <string name="register_service_mobility"> Pode ir na casa da pessoa fazer o serviço?</string>
+    <string name="register_service_name"> Qual Serviço Você quer Cadastrar? </string>
+    <string name="register_service_price"> Qual o Valor do Serviço?  </string>
+    <string name="register_service_price_ticket"> Qual o Preço da Passagem?</string>
+    <string name="register_service_mobility"> Pode ir na Casa da Pessoa Fazer o Serviço?</string>
     <string name="register_service_radio_yes"> Sim</string>
     <string name="register_service_radio_no">Não</string>
+    <string name="register_service_type_contact"> Onde Deseja Receber Contato das Clientes?</string>
+    <string name="register_service_radio_whatsapp"> WhatsApp</string>
+    <string name="register_service_radio_email"> Email</string>
 
     <!-- Checkbox  activity_register_service -->
     <string name="check_cabeleleira">Cabelereira</string>

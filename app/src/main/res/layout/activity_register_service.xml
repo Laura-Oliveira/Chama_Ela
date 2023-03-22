@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.RegisterServiceActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.RegisterServiceActivity">
+    ß
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_logo"
             style="@style/Logo"
@@ -260,10 +263,11 @@
         <!-- ========= REGISTER USER RADIO BUTTON TYPE USER ========= -->
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/materialTextView"
+        android:id="@+id/txt_title_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="8dp"
         android:text="@string/register_service_mobility"
         android:textAlignment="center"
         android:textSize="22sp"
@@ -271,16 +275,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_sevice_price" />
 
+    <!-- ========= REGISTER SERVICE RADIO GROUP ========= -->
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/register_service_price_ticket"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_radio_group">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/radio_btn_register_service_yes"
@@ -298,18 +303,16 @@
             android:minHeight="48dp"
             android:text="@string/register_service_radio_no"
             android:textSize="10pt" />
-
     </RadioGroup>
 
-        <!-- ========= REGISTER SERVICE PRICE ========= -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/register_service_price_ticket"
         style="@style/TextBox"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
         android:hint="@string/register_service_price_ticket"
         app:endIconMode="clear_text"
-        app:layout_constraintBottom_toTopOf="@+id/btn_register_service"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -325,21 +328,66 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_register_service_type_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/register_service_type_contact"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_service_price_ticket" />
+
+    <!-- ========= REGISTER SERVICE RADIO GROUP ========= -->
+    <RadioGroup
+        android:id="@+id/radio_group_type_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_register_service_type_contact">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_btn_register_service_whatsapp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:minHeight="48dp"
+            android:text="@string/register_service_radio_whatsapp"
+            android:textSize="10pt" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_btn_register_service_no"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/register_service_radio_email"
+            android:textSize="10pt" />
+
+    </RadioGroup>
+
         <!-- ========= REGISTER USER BUTTON ========= -->
-
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_register_service"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/btn_color"
         android:onClick="registerService"
         android:text="@string/btn_register_service"
         android:textColor="@color/txt_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_service_price_ticket" />
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_type_contact" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
