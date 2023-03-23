@@ -49,7 +49,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- ========= REGISTER USER EMAIL ========= -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/regiter_email"
         style="@style/TextBox"
@@ -72,7 +71,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- ========= REGISTER USER PHONE ========= -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/register_phone"
         style="@style/TextBox"
@@ -95,7 +93,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- ========= REGISTER USER PASSWORD ========= -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/register_password"
         style="@style/TextBox"
@@ -120,7 +117,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- ========= REGISTER USER BUTTON ========= -->
+    <!-- ========= BUTTON ========= -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_register_user"
         style="@style/Button"

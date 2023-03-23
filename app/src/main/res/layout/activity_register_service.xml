@@ -20,7 +20,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- ========= REGISTER SERVICE NAME ========= -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_title"
         style="@style/TextViewTitle"
@@ -57,187 +56,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Register Type of Service (Title)
-        <TextView
-            android:id="@+id/txt_type_service"
-            android:layout_width="match_parent"
-            android:layout_height="45sp"
-            android:text="@string/txt_type_service"
-            android:textColor="@color/title_main"
-            android:textSize="11pt"
-            android:textStyle="bold"
-            android:layout_marginBottom="5sp"
-            /> -->
-
-        <!-- Register Type of Service (Checkbox Options)
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox_lunch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-
-            <TextView
-                android:id="@+id/txt_check_lunch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_almoco"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox_cake"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
-
-            <TextView
-                android:id="@+id/txt_check_cake"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_boleira"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox_hair_style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-
-            <TextView
-                android:id="@+id/txt_check_hair_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_cabeleleira"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox_chef"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-
-            <TextView
-                android:id="@+id/txt_check_chef"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_cozinheira"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/check_box_pizza"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-
-            <TextView
-                android:id="@+id/check_pizza"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_faz_pizza"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox_nails"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-
-            <TextView
-                android:id="@+id/check_nails"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_manicure"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox_color_hair"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-
-            <TextView
-                android:id="@+id/check_color_hair"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/check_pinta_cabelo"
-                android:textColor="@color/title_main"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginBottom="8pt"
-                />
-        </LinearLayout>
--->
-        <!-- ========= REGISTER SERVICE PRICE ========= -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/register_sevice_price"
         style="@style/TextBox"
@@ -261,17 +79,10 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- ========= REGISTER USER RADIO BUTTON TYPE USER ========= -->
-
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_title_radio_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
+        style="@style/TitleRadioGroup"
         android:text="@string/register_service_mobility"
-        android:textAlignment="center"
-        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_sevice_price" />
@@ -279,10 +90,7 @@
     <!-- ========= REGISTER SERVICE RADIO GROUP ========= -->
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
+        style="@style/RadioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -290,20 +98,13 @@
 
         <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/radio_btn_register_service_yes"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="80dp"
-            android:minHeight="48dp"
-            android:text="@string/register_service_radio_yes"
-            android:textSize="10pt" />
+            style="@style/RadioButton"
+            android:text="@string/register_service_radio_yes"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/radio_btn_register_service_no"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="@string/register_service_radio_no"
-            android:textSize="10pt" />
+            style="@style/RadioButton"
+            android:text="@string/register_service_radio_no"/>
     </RadioGroup>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -329,16 +130,10 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_register_service_type_contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
+        style="@style/TitleRadioGroup"
         android:text="@string/register_service_type_contact"
-        android:textAlignment="center"
-        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_service_price_ticket" />
@@ -346,10 +141,7 @@
     <!-- ========= REGISTER SERVICE RADIO GROUP ========= -->
     <RadioGroup
         android:id="@+id/radio_group_type_contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
+        style="@style/RadioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -357,20 +149,14 @@
 
         <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/radio_btn_register_service_whatsapp"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="80dp"
-            android:minHeight="48dp"
-            android:text="@string/register_service_radio_whatsapp"
-            android:textSize="10pt" />
+            style="@style/RadioButton"
+            android:layout_width="180dp"
+            android:text="@string/register_service_radio_whatsapp"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radio_btn_register_service_no"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="@string/register_service_radio_email"
-            android:textSize="10pt" />
+            android:id="@+id/radio_btn_register_service_email"
+            style="@style/RadioButton"
+            android:text="@string/register_service_radio_email"/>
 
     </RadioGroup>
 
