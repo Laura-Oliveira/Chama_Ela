@@ -18,8 +18,8 @@ public class LearnSubjectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_subject);
 
-        view = findViewById(R.id.screen_learn_subject);
-        view.setBackgroundColor(getResources().getColor(R.color.color_background));
+       /* view = findViewById(R.id.screen_learn_subject);
+        view.setBackgroundColor(getResources().getColor(R.color.color_background));*/
         TextView txtLinkMarmitex = findViewById(R.id.link_marmitex);
         txtLinkMarmitex.setMovementMethod(LinkMovementMethod.getInstance());
 

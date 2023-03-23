@@ -54,7 +54,7 @@
 
 
     <!-- Strings activity_learn_subject -->
-    <string name="txt_title_learn_subject"> Bora Aprender?</string>
+    <string name="learn_subject_title"> Conteúdo Gratuito </string>
     <string name="link_marmitex">
         <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-marmitex/">Como vender Marmitex?</a>
     </string>

@@ -55,7 +55,7 @@
         <activity
             android:name=".View.SearchWorkerActivity"
             android:label="@string/title_activity_search_woker" />
-        
+
         <activity android:name=".Controller.RegisterUserTypeActivity" />
     </application>
 
