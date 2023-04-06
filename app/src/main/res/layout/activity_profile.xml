@@ -53,7 +53,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/profile_user_name"
-        android:layout_width="100dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
