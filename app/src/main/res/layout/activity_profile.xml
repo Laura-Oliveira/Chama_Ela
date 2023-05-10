@@ -53,7 +53,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/profile_user_name"
-        android:layout_width="500dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
@@ -69,7 +69,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/profile_user_phone"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:maxLines="1"
@@ -84,7 +84,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/profile_user_email"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:maxLines="1"
