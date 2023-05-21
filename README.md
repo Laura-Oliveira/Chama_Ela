@@ -51,7 +51,7 @@ Porque grande parte das **iniciativas voltadas para mulheres que sofrem abuso** 
 
 # Chama Ela! (en)
 
-Chama Ela! is an **Android pplication** focused on **helping women in abusive relationships and who have no source of income**.
+Chama Ela! is an **Android application** focused on **helping women in abusive relationships and who have no source of income**.
 
 These women can **advertise their services for free** on the platform.
 
