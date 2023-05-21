@@ -1,6 +1,6 @@
 # Chama Ela! (pt-br)
 
-Chama Ela! é um **aplicativo Android** é focado em **ajudar mulheres em situação de relacionamento abusivo e que não possuem fonte de renda**.
+Chama Ela! é um **aplicativo Android** focado em **ajudar mulheres em situação de relacionamento abusivo e que não possuem fonte de renda**.
 
 Essas mulheres podem **divulgar seus serviços de forma gratuita** na plataforma.
 
