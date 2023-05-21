@@ -71,11 +71,11 @@ Either because they cannot support themselves financially, or because they don't
 
 ## Differential
 
-The **differential** of the application is that it is an **initiative that takes help on these women's hands**.
+The **differential** of the application is that it is an **initiative that takes help to these women's hands**.
 
-Because **government and private initiatives** have great **difficulty in reaching this public**.
+Because **government and private initiatives** have great **difficulty in reaching the public**.
 
-Because most of the **initiatives focused in women who suffer abuse** have a dynamic where **the woman must seek help**.
+Because most of the **initiatives focused on women who suffer abuse** have a dynamic where **the woman must seek help**.
 
 **But how do I look for help when I don't even know I need help?**
 
