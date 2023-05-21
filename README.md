@@ -37,7 +37,7 @@ Porque grande parte das **iniciativas voltadas para mulheres que sofrem abuso** 
 
 #### **Pitch:** https://www.linkedin.com/feed/update/urn:li:activity:7042168097633353728/
 
-### Status: Desenvolvimento
+### Status: Em Desenvolvimento
 
 ## Telas
 <p align="center">
@@ -87,6 +87,8 @@ Because most of the **initiatives focused in women who suffer abuse** have a dyn
 * Firebase;
 * gradle;
 * Trello.
+
+### Status: Ongoing.
 
 ## Screens
 <p align="center">
