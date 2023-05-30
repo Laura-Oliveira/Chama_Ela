@@ -101,6 +101,14 @@ Because most of the **initiatives focused on women who suffer abuse** have a dyn
 
 <!-- 
 
+Descricao playstore
+
+Aplicativo que ajuda mulheres na busca da independência financeira
+
+Chama Ela! é um aplicativo que vem para facilitar a vida de mulheres que precisam anunciar seus serviços, e mulheres que buscam serviços de outras mulheres.
+
+Aqui você vai encontrar todo tipo de serviços oferecido por mulheres.
+
 Chama Ela! é um **aplicativo Android** voltado para **auxiliar mulheres de periferia e/ou baixa renda em situação de relacionamento abusivo e dependência financeira a obter fonte de renda**, através da **divulgação dos seus serviços** para sua vizinhança através da plataforma de **forma gratuita**.
 
 Para que essa mulher consiga levantar dinheiro suficiente para sair desse ambiente/relacionamento tóxico.
