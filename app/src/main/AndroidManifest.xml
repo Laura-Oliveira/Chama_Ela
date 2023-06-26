@@ -17,7 +17,10 @@
         <activity
             android:name=".View.SplashScreenActivity"
             android:exported="true">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".Controller.LoginActivity" />
@@ -29,11 +32,6 @@
         <activity
             android:name=".View.ProfileActivity"
             android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -60,10 +58,4 @@
 
         <activity android:name=".Controller.RegisterUserTypeActivity" />
     </application>
-
-
 </manifest>
-
-    <!--  <meta-data
-           android:name="android.app.lib_name"
-           android:value="" /> -->
